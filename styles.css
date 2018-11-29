@@ -1,0 +1,58 @@
+.container {
+    margin: 50px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+    
+.one {
+    height: 150px;
+    width: 150px;
+    transition: transform 0.5s ease-out;
+    box-shadow: 7px 7px gray;
+}
+.one:hover {
+    transform: scale(1.25);
+}
+
+.two {
+    transition: all 0.5s ease; 
+    opacity: 0.5;
+    width: 150px;
+    height: 150px;
+}
+.two:hover {
+    opacity: 1;
+    box-shadow: 7px 7px gray;
+}
+
+.three {
+    width: 100px;
+    height: 100px;
+    animation: bounce 2s ease-in-out infinite;
+    position: relative; 
+    animation-play-state: paused;
+}
+.three:hover{
+    animation-play-state: running;
+}
+@keyframes bounce {
+    0% {top: 0px;}
+    50% {top: 50px;}
+    100% {top: 0px}
+}
+
+.four {
+    border-radius: 5px;
+    height: 150px;
+    width: 150px;
+    transition: all 1.0s ease;   
+    background-color: teal;
+    color: teal; 
+    text-align: center; 
+}
+.four:hover {
+    -webkit-transform: rotateZ(90deg);
+    -ms-transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
+    color: white;
+}
